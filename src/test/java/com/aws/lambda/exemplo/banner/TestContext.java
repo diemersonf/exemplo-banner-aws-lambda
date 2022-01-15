@@ -127,10 +127,16 @@ public class TestContext implements Context {
      * A simple {@code LambdaLogger} that prints everything to stderr.
      */
     private static class TestLogger implements LambdaLogger {
+		@Override
+		public void log(byte[] message) {
+			// TODO Auto-generated method stub
+			
+		}
 
-        @Override
-        public void log(String message) {
-            System.err.println(message);
-        }
+		@Override
+		public void log(String message) {
+			// TODO Auto-generated method stub
+			
+		}
     }
 }

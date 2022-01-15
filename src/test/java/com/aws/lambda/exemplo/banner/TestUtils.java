@@ -78,7 +78,7 @@ public class TestUtils {
                 S3EventNotification event = S3EventNotification.parseJson(json);
 
                 @SuppressWarnings("unchecked")
-                T result = (T) new S3Event(event.getRecords());
+                T result = (T) new S3Event();
                 return result;
 
             } else if (clazz == SNSEvent.class) {

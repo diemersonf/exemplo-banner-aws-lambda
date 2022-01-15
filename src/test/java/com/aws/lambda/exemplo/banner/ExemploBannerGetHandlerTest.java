@@ -7,13 +7,15 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.amazonaws.services.lambda.runtime.Context;
+import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyRequestEvent;
+import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyResponseEvent;
 
 /**
  * A simple test harness for locally invoking your Lambda function handler.
  */
-public class LambdaFunctionHandlerTest {
+public class ExemploBannerGetHandlerTest {
 
-    private static Object input;
+    private static APIGatewayProxyRequestEvent input;
 
     @BeforeClass
     public static void createInput() throws IOException {
@@ -32,10 +34,10 @@ public class LambdaFunctionHandlerTest {
 
     @Test
     public void testLambdaFunctionHandler() {
-        LambdaFunctionHandler handler = new LambdaFunctionHandler();
+        ExemploBannerGetHandler handler = new ExemploBannerGetHandler();
         Context ctx = createContext();
 
-        String output = handler.handleRequest(input, ctx);
+        APIGatewayProxyResponseEvent output = handler.handleRequest(input, ctx);
 
         // TODO: validate output here if needed.
         Assert.assertEquals("Hello from Lambda!", output);

@@ -36,6 +36,7 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
  */
 public class TestUtils {
 
+
     private static final ObjectMapper mapper = new ObjectMapper();
     private static final ObjectMapper snsEventMapper = new ObjectMapper();
     private static final ObjectMapper dynamodbEventMapper = new ObjectMapper();

@@ -1,0 +1,17 @@
+{
+    "resource": "/banner",
+    "path": "/banner",
+    "httpMethod": "POST",
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Content-Type": "application/json"
+    },
+    "requestContext": {
+        "resourcePath": "/banner",
+        "httpMethod": "POST",
+        "path": "/dev/banner"
+    },
+    "body": "",
+    "isBase64Encoded": false
+}

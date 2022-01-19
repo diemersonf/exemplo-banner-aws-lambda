@@ -1,6 +1,5 @@
 package com.aws.lambda.exemplo.banner;
 
-
 import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.params.ParameterizedTest;
@@ -11,26 +10,25 @@ import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyResponseEvent
 import com.amazonaws.services.lambda.runtime.tests.annotations.Events;
 import com.amazonaws.services.lambda.runtime.tests.annotations.HandlerParams;
 import com.amazonaws.services.lambda.runtime.tests.annotations.Responses;
-
 /**
  * A simple test harness for locally invoking your Lambda function handler.
  */
-public class ExemploBannerGetHandlerTest {
+public class ExemploBannerPostHandlerTest {
 	private Context createContext() {
 		TestContext contextMock = new TestContext();
 
-		contextMock.setFunctionName("get-ion-home-banner");
+		contextMock.setFunctionName("post-ion-home-banner");
 
 		return contextMock;
 	}
 
 	@ParameterizedTest
 	@HandlerParams(
-	   events = @Events(folder = "apigw/get/events/", type = APIGatewayProxyRequestEvent.class),
-	   responses = @Responses(folder = "apigw/get/responses/", type = APIGatewayProxyResponseEvent.class)
+	   events = @Events(folder = "apigw/post/events/", type = APIGatewayProxyRequestEvent.class),
+	   responses = @Responses(folder = "apigw/post/responses/", type = APIGatewayProxyResponseEvent.class)
 	)
 	public void testIonHomeBannerGetHandler(APIGatewayProxyRequestEvent event, APIGatewayProxyResponseEvent response) {
-		ExemploBannerGetHandler handler = new ExemploBannerGetHandler();
+		ExemploBannerPostHandler handler = new ExemploBannerPostHandler();
 		Context contextMock = createContext();
 		
 	    APIGatewayProxyResponseEvent result = handler.handleRequest(event, contextMock);

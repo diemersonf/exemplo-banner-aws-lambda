@@ -1,0 +1,9 @@
+{
+    "httpMethod": "POST",
+    "headers": {
+        "Content-Type": "application/json"
+    },
+    "queryStringParameters": {
+        "bannername": "exemplo-1"
+    }
+}

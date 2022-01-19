@@ -1,0 +1,7 @@
+{
+    "statusCode": 405,
+    "headers": {
+        "Content-Type": "application/json"
+    },
+    "isBase64Encoded": false
+}

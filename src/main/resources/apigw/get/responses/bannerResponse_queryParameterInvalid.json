@@ -1,0 +1,8 @@
+{
+    "statusCode": 400,
+    "headers": {
+        "Content-Type": "application/json"
+    },
+    "body": "Invalid parameters! Check that the parameter name has been set correctly",
+    "isBase64Encoded": false
+}

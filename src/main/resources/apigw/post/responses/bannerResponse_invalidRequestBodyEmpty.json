@@ -1,0 +1,8 @@
+{
+    "statusCode": 400,
+    "headers": {
+        "Content-Type": "application/json"
+    },
+    "body": "Invalid request! Check that the data has been post correctly.",
+    "isBase64Encoded": false
+}

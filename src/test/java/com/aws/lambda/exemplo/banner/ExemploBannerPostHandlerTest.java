@@ -17,7 +17,7 @@ public class ExemploBannerPostHandlerTest {
 	private Context createContext() {
 		TestContext contextMock = new TestContext();
 
-		contextMock.setFunctionName("post-ion-home-banner");
+		contextMock.setFunctionName("post-banner-exemplo");
 
 		return contextMock;
 	}

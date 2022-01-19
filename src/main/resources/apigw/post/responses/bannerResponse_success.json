@@ -3,6 +3,6 @@
     "headers": {
         "Content-Type": "application/json"
     },
-    "body": "{\n  \"name\": \"exemplo-2\",\n  \"link\": \"http:\/\/s3-external-1.amazonaws.com\/bucket\/banner-exemplo-2\/b\",\n  \"text\": \"texto banner exemplo 2\",\n  \"action\": \"http:\/\/yourstore.com\/yourproduct123\",\n  \"tags\": {\n    \"tracking_id\": \"UA-123456\",\n    \"cliente_id\": \"987654\"\n  }\n}",
+    "body": "{\n  \"nome\": \"exemplo-1\",\n  \"link\": \"http:\/\/s3-external-1.amazonaws.com\/bucket\/banner-exemplo-1\",\n  \"texto\": \"texto banner exemplo 1\",\n  \"acao\": \"http:\/\/yourstore.com\/yourproduct123\",\n  \"tags\": {\n    \"cliente_id\": \"987654\",\n    \"tracking_id\": \"UA-123456\"\n  }\n}",
     "isBase64Encoded": false
 }

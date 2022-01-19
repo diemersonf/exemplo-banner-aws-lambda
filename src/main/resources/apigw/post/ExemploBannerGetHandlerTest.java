@@ -1,5 +1,6 @@
 package com.aws.lambda.exemplo.banner;
 
+
 import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.params.ParameterizedTest;
@@ -10,6 +11,7 @@ import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyResponseEvent
 import com.amazonaws.services.lambda.runtime.tests.annotations.Events;
 import com.amazonaws.services.lambda.runtime.tests.annotations.HandlerParams;
 import com.amazonaws.services.lambda.runtime.tests.annotations.Responses;
+
 /**
  * A simple test harness for locally invoking your Lambda function handler.
  */
@@ -17,7 +19,7 @@ public class ExemploBannerGetHandlerTest {
 	private Context createContext() {
 		TestContext contextMock = new TestContext();
 
-		contextMock.setFunctionName("get-banner-exemplo");
+		contextMock.setFunctionName("get-ion-home-banner");
 
 		return contextMock;
 	}

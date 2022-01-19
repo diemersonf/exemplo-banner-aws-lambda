@@ -9,7 +9,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 
 @DynamoDBTable(tableName = "exemplo-banner")
 public class Banner {
-	@DynamoDBHashKey(attributeName="name")
+	@DynamoDBHashKey(attributeName="nome")
 	private String nome;
 	
 	@DynamoDBAttribute(attributeName = "link")
